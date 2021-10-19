@@ -1,0 +1,82 @@
+.relative {
+	width: 700px;
+	height: 700px;
+	background: blue;
+	position: relative;
+	margin: 0 auto;
+
+transition: all 2s linear ;
+
+}
+
+.relative:hover {
+	 width: 1000px;
+	background-color: yellow;
+}
+
+.absolute {
+	width: 200px;
+	height: 200px;
+	background: darkred;
+	position: absolute;
+
+ transition: all 2s linear;
+
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%)
+
+}
+
+.absolute:hover {
+	background-color: red;
+	transform: translate(50%, -50%) rotate(360deg);
+
+
+
+}
+
+
+.section-2 {
+	position: relative;
+	margin-bottom: 50px;
+
+}
+
+.html-icon {
+	width: 100px;
+	position: relative;
+	animation: customicon 3s infinite linear alternate;
+}
+
+@keyframes customicon {
+	from {
+		left: 0;
+		transform: rotate(0deg);
+		
+	}
+
+	to {
+		left: 500px;
+		transform: rotate(360deg);
+	}
+}
+
+.section-3-image {
+  opacity: 0.2;
+  transition: all 2s;
+
+
+}
+
+.section-3-image:hover {
+    opacity: 100;	
+}
+
+.brightnes {
+	filter: brightness(0,9);
+}
+
+
+
+
